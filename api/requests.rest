@@ -1,0 +1,1 @@
+GET http://localhost:3001/api/arrival/airport=EDDF&begin=1517227200&end=1517230800

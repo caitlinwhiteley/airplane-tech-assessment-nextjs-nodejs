@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 179, 255;
+    --background-end-rgb: 188, 236, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    font-family: monospace;
+    font-size: 14px;
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
+}
+
+select {
+    width: 100%;
+    min-height: 56px;
+    border-radius: 4px;
+    border: solid 1px rgb(0, 0, 0, 0.23);
+    padding: 18px 14px;
+    background-color: transparent;
+    font-weight: normal;
+}
+select:hover {
+    border-color: rgb(0, 0, 0, 0.87);
+    cursor: pointer;
+}
+
+main {
+    align-self: center;
+    padding: 0 20px 100px 20px;
+}
+
+.intro-p {
+    margin: 50px 0;
+}
+
+.title-h1 {
+    font-size: 3em;
+    padding: 0.5em;
+    text-align: center;
+    background: rgb(var(--background-end-rgb));
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.radio {
+    margin-right: 10px;
+}
+
+form > * {
+    margin: 20px 0;
+}
+
+.submit-button {
+    margin-bottom: 50px;
+    border: solid black 3px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: rgb(var(--background-end-rgb));
+    font-weight: bold;
+}
+.submit-button:hover {
+    cursor: pointer;
+    background: rgb(var(--background-start-rgb), 0.8);
+    text-decoration: underline;
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+.link:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+footer {
+    padding: 2em;
+    background: rgb(var(--background-start-rgb), 0.6);
+}
+
+td {
+    padding: 10px;
+    min-width: 100px;
+}
+
+table {
+    margin-top: 20px;
+    border: solid 1px rgb(0, 0, 0, 0.23);
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+}
