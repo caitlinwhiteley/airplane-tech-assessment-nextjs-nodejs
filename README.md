@@ -13,3 +13,5 @@ In a new terminal, cd in to the `client` folder, run `npm install`, then `npm ru
 ## Overview
 
 This has been a 2 day project to create a basic app that finds planes in the sky. If I had more time, I would focus on making the site more accesible, creating tokens for styling so that I have consistency across all the UI (ie standard margin heights, font sizes, colours, etc), handle the error messages better in my form, and tidy up my code more.
+
+This is a sentence added to the merge branch 
